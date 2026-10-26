@@ -1,0 +1,57 @@
+motion_data:
+  robot_name: g1
+  root_state_columns:
+    - base_pos_xyz
+    - base_quat
+  root_link_name: pelvis
+  root_quat_order: xyzw
+  csv_fps: 120
+  csv_paths:
+    - ../bones/arc_jog_left_loop_002__A029.csv
+    - ../bones/arc_walk_left_loop_001__A029.csv
+    - ../bones/idle_turn_270_001__A048.csv
+    - ../bones/idle_turn_360_001__A047.csv
+    - ../bones/jog_arc_cw_loop_004__A045.csv
+    - ../bones/jog_backward_loop_002__A022.csv
+    - ../bones/jog_backward_loop_003__A023.csv
+    - ../bones/jog_forward_loop_003__A021.csv
+    - ../bones/jog_forward_loop_003__A022.csv
+    - ../bones/step_rotate_idle_000_002__A026.csv
+    - ../bones/walk_arc_cw_loop_002__A046.csv
+    - ../bones/walk_backward_loop_001__A022.csv
+    - ../bones/walk_backward_loop_001__A024.csv
+    - ../bones/walk_forward_loop_002__A022.csv
+    - ../bones/walk_forward_loop_002__A024.csv
+    - ../bones/walk_sideway_left_loop_002__A021.csv
+    - ../bones/walk_sideway_right_loop_001__A022.csv
+
+  csv_joint_names:
+    - left_hip_pitch_joint
+    - left_hip_roll_joint
+    - left_hip_yaw_joint
+    - left_knee_joint
+    - left_ankle_pitch_joint
+    - left_ankle_roll_joint
+    - right_hip_pitch_joint
+    - right_hip_roll_joint
+    - right_hip_yaw_joint
+    - right_knee_joint
+    - right_ankle_pitch_joint
+    - right_ankle_roll_joint
+    - waist_yaw_joint
+    - waist_roll_joint
+    - waist_pitch_joint
+    - left_shoulder_pitch_joint
+    - left_shoulder_roll_joint
+    - left_shoulder_yaw_joint
+    - left_elbow_joint
+    - left_wrist_roll_joint
+    - left_wrist_pitch_joint
+    - left_wrist_yaw_joint
+    - right_shoulder_pitch_joint
+    - right_shoulder_roll_joint
+    - right_shoulder_yaw_joint
+    - right_elbow_joint
+    - right_wrist_roll_joint
+    - right_wrist_pitch_joint
+    - right_wrist_yaw_joint
