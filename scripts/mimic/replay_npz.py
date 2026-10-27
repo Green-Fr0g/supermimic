@@ -48,9 +48,7 @@ from isaaclab.sim import SimulationContext  # noqa: E402
 from isaaclab.utils import configclass  # noqa: E402
 from isaaclab.utils.assets import ISAAC_NUCLEUS_DIR  # noqa: E402
 
-from z_lab.assets.robots.dr02 import DR02_CFG  # noqa: E402
-from z_lab.assets.robots.g1 import G1_CFG  # noqa: E402
-from z_lab.assets.robots.g1_23 import G1_23DOF_CFG  # noqa: E402
+from supermimic.assets.robots.g1 import G1_CFG  # noqa: E402
 
 ROBOT_ASSET_REGISTRY: dict[str, ArticulationCfg] = {
     "g1": G1_CFG,

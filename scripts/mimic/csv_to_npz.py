@@ -84,9 +84,7 @@ from isaaclab.utils import configclass
 from isaaclab.utils.assets import ISAAC_NUCLEUS_DIR
 from isaaclab.utils.math import axis_angle_from_quat, quat_conjugate, quat_mul, quat_slerp
 
-from z_lab.assets.robots.dr02 import DR02_CFG
-from z_lab.assets.robots.g1 import G1_CFG
-from z_lab.assets.robots.g1_23 import G1_23DOF_CFG
+from supermimic.assets.robots.g1 import G1_CFG
 
 ROBOT_ASSET_REGISTRY: dict[str, ArticulationCfg] = {
     "g1": G1_CFG,
