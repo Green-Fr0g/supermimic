@@ -35,7 +35,7 @@ case "${1:-}" in
     -h|--help|"")
         cat <<'EOF'
 用法：
-  ./supermimic.sh -i                         安装项目环境
+  ./supermimic.sh -i                         从包索引安装项目环境
   ./supermimic.sh -l                         列出已注册任务
   ./supermimic.sh -t --profile smoke        使用 supermimic_rl 训练
   ./supermimic.sh -t --profile paper        使用 paper 参数训练

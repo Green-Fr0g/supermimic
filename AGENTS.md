@@ -47,10 +47,11 @@ Read `../reference/supermimic_vibed/README.md` before consulting its `supermimic
 
 ## Build, Test, and Development Commands
 
-Use Python 3.12 and `uv`. Dependencies resolve to an editable sibling checkout at `../reference/IsaacLab`; update `[tool.uv.sources]` if that location changes.
+Use Python 3.12 and `uv`. Install the published `isaaclab==3.0.0` package through the declared package indexes. No local Isaac Lab checkout is required; do not add machine-specific source paths to dependency declarations or the lockfile.
 
 ```bash
-uv sync                                     # Install runtime and development dependencies
+./supermimic.sh -i                           # Install locked runtime and development dependencies
+uv sync --locked                            # Equivalent direct project installation
 uv build                                    # Build wheel and source distributions
 uv run pytest                               # Run project tests
 uv run ruff check src scripts tests          # Lint and check import ordering

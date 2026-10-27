@@ -18,34 +18,35 @@ authors = [
 ]
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "isaaclab-dev[viser]",
+    "isaaclab[viser]==3.0.0",
+    # Pinocchio requires NumPy 2.3; keep compatibility with the supported Numba range.
+    "numpy>=2.3,<2.4",
 ]
 
 [project.entry-points."isaaclab.tasks"]
 supermimic = "supermimic.tasks"
 
 [project.optional-dependencies]
-all = ["isaaclab-dev[all]"]
-dev = ["isaaclab-dev[dev]"]
-importers = ["isaaclab-dev[importers]"]
-isaacsim = ["isaaclab-dev[isaacsim]"]
-leapp = ["isaaclab-dev[leapp]"]
-mimic = ["isaaclab-dev[mimic]"]
-ov = ["isaaclab-dev[ov]"]
-ovphysx = ["isaaclab-dev[ovphysx]"]
-ovrtx = ["isaaclab-dev[ovrtx]"]
-rerun = ["isaaclab-dev[rerun]"]
-rl-games = ["isaaclab-dev[rl-games]"]
-rlinf = ["isaaclab-dev[rlinf]"]
-sb3 = ["isaaclab-dev[sb3]"]
-skrl = ["isaaclab-dev[skrl]"]
-teleop = ["isaaclab-dev[teleop]"]
-test = ["isaaclab-dev[test]"]
-tetrahedralization = ["isaaclab-dev[tetrahedralization]"]
-torchrl = ["isaaclab-dev[torchrl]"]
-video = ["isaaclab-dev[video]"]
-viser = ["isaaclab-dev[viser]"]
-wandb = ["isaaclab-dev[wandb]"]
+all = ["isaaclab[all]"]
+dev = ["isaaclab[dev]"]
+importers = ["isaaclab[importers]"]
+isaacsim = ["isaaclab[isaacsim]"]
+leapp = ["isaaclab[leapp]"]
+mimic = ["isaaclab[mimic]"]
+ov = ["isaaclab[ov]"]
+ovphysx = ["isaaclab[ovphysx]"]
+ovrtx = ["isaaclab[ovrtx]"]
+rerun = ["isaaclab[rerun]"]
+rlinf = ["isaaclab[rlinf]"]
+sb3 = ["isaaclab[sb3]"]
+skrl = ["isaaclab[skrl]"]
+teleop = ["isaaclab[teleop]"]
+test = ["isaaclab[test]"]
+tetrahedralization = ["isaaclab[tetrahedralization]"]
+torchrl = ["isaaclab[torchrl]"]
+video = ["isaaclab[video]"]
+viser = ["isaaclab[viser]"]
+wandb = ["isaaclab[wandb]"]
 
 [dependency-groups]
 dev = ["codespell>=2.4", "pre-commit>=4.2", "pytest>=8.3", "ruff>=0.11"]
@@ -58,36 +59,19 @@ environments = [
     "sys_platform == 'linux' and platform_machine == 'aarch64'",
     "sys_platform == 'win32' and platform_machine == 'AMD64'",
 ]
+# Reconcile the optional Isaac Sim/OV stacks with Isaac Lab's Newton and OpenUSD runtime.
 override-dependencies = [
-    # Pinocchio's cmeel-boost requires NumPy 2.3; Numba also caps the supported NumPy range.
-    "numpy>=2.3,<2.4",
     "mujoco~=3.12.0",
     "mujoco-warp~=3.12.0",
     "newton[sim]==1.6.1",
     "newton-usd-schemas>=0.5.0",
-    "usd-exchange==3.0.0",
-    "usd-optimize~=1.3.0",
-    "torch==2.12.0",
-    "torchvision==0.27.0",
+    "usd-exchange==3.0.1",
     "packaging>=20,<27",
+    # Isaac Lab 3.0 requires >=2.8; Isaac Sim 6.2 still pins 2.7.
+    "urllib3>=2.8.0",
 ]
 
 [tool.uv.sources]
-"isaaclab" = { path = "../reference/IsaacLab/source/isaaclab", editable = true }
-"isaaclab-assets" = { path = "../reference/IsaacLab/source/isaaclab_assets", editable = true }
-"isaaclab-contrib" = { path = "../reference/IsaacLab/source/isaaclab_contrib", editable = true }
-"isaaclab-dev" = { path = "../reference/IsaacLab", editable = true }
-"isaaclab-experimental" = { path = "../reference/IsaacLab/source/isaaclab_experimental", editable = true }
-"isaaclab-mimic" = { path = "../reference/IsaacLab/source/isaaclab_mimic", editable = true }
-"isaaclab-newton" = { path = "../reference/IsaacLab/source/isaaclab_newton", editable = true }
-"isaaclab-ov" = { path = "../reference/IsaacLab/source/isaaclab_ov", editable = true }
-"isaaclab-physx" = { path = "../reference/IsaacLab/source/isaaclab_physx", editable = true }
-"isaaclab-ppisp" = { path = "../reference/IsaacLab/source/isaaclab_ppisp", editable = true }
-"isaaclab-rl" = { path = "../reference/IsaacLab/source/isaaclab_rl", editable = true }
-"isaaclab-tasks" = { path = "../reference/IsaacLab/source/isaaclab_tasks", editable = true }
-"isaaclab-tasks-experimental" = { path = "../reference/IsaacLab/source/isaaclab_tasks_experimental", editable = true }
-"isaaclab-teleop" = { path = "../reference/IsaacLab/source/isaaclab_teleop", editable = true }
-"isaaclab-visualizers" = { path = "../reference/IsaacLab/source/isaaclab_visualizers", editable = true }
 "omniverseclient" = { index = "pypi-public" }
 "ovphysx" = { index = "pypi-public" }
 "ovrtx" = { index = "pypi-public" }

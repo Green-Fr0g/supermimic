@@ -16,17 +16,25 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then crea
 environment uses the Newton backend and does not install Isaac Sim:
 
 ```bash
-uv sync
+./supermimic.sh -i
 ```
 
 The project pins Python 3.12 in `.python-version` and creates its environment in `.venv`.
 Use `uv run <command>` to select it automatically, or activate it with `source .venv/bin/activate`.
-To reproduce the resolved dependencies, run `uv sync --locked` with the checked-in `uv.lock`.
+The installer runs `uv sync --locked` with the checked-in `uv.lock`. Isaac Lab 3.0.0 is installed
+as a published Python package; no Isaac Lab source checkout or fixed directory layout is required.
+You can also use the pip-compatible workflow:
 
-This project's `pyproject.toml` uses editable relative paths to `../reference/IsaacLab`. Update
-`[tool.uv.sources]` if either directory moves.
+```bash
+uv venv --python 3.12
+uv pip install -e .
+```
 
-The project forwards every optional extra declared by the Isaac Lab package used to create it, including physics,
+`uv sync --locked` also installs the development group and reproduces the lockfile.
+`uv pip install -e .` installs runtime dependencies from package metadata and resolves their versions
+without using `uv.lock`.
+
+The project forwards optional extras from the published Isaac Lab package, including physics,
 rendering, visualizer, RL, teleoperation, and development features. Inspect `pyproject.toml` for the complete list and
 pass each required extra to `uv run`:
 
