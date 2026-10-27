@@ -13,7 +13,9 @@ logs/
 outputs/
 wandb/
 /src/supermimic/assets/data/motions/
+/assets/motions/
 
 # Generated editor configuration
 pyrightconfig.json
 
+.vscode

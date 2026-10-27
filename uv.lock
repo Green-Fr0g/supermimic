@@ -872,7 +872,7 @@ name = "cuda-toolkit"
 version = "13.0.2"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/cuda-toolkit/cuda_toolkit-13.0.2-py2.py3-none-any.whl", hash = "sha256:b198824cf2f54003f50d64ada3a0f184b42ca0846c1c94192fa269ecd97a66eb" },
+    { url = "https://pypi.nvidia.cn/cuda-toolkit/cuda_toolkit-13.0.2-py2.py3-none-any.whl", hash = "sha256:b198824cf2f54003f50d64ada3a0f184b42ca0846c1c94192fa269ecd97a66eb" },
 ]
 
 [package.optional-dependencies]
@@ -1911,9 +1911,6 @@ rlinf = [
     { name = "ray", extra = ["default"] },
     { name = "timm" },
 ]
-rsl-rl = [
-    { name = "rsl-rl-lib" },
-]
 sb3 = [
     { name = "rich" },
     { name = "stable-baselines3" },
@@ -2238,9 +2235,9 @@ dependencies = [
     { name = "isaacsim-kernel" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim/isaacsim-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:13158fe55f6037522e89db351c219573e0608a66e108569666ac0ccfcfb8776f" },
-    { url = "https://pypi.nvidia.com/isaacsim/isaacsim-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:55fb65052c0fe025f7165f10e71b4e693e26b6fc2f8c7cc08875ac41b00e695d" },
-    { url = "https://pypi.nvidia.com/isaacsim/isaacsim-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:ebf8a7e43be99fdef0fc8677aae0c0fbdba1d42976a04a978505f0db5914658b" },
+    { url = "https://pypi.nvidia.cn/isaacsim/isaacsim-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:13158fe55f6037522e89db351c219573e0608a66e108569666ac0ccfcfb8776f" },
+    { url = "https://pypi.nvidia.cn/isaacsim/isaacsim-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:55fb65052c0fe025f7165f10e71b4e693e26b6fc2f8c7cc08875ac41b00e695d" },
+    { url = "https://pypi.nvidia.cn/isaacsim/isaacsim-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:ebf8a7e43be99fdef0fc8677aae0c0fbdba1d42976a04a978505f0db5914658b" },
 ]
 
 [package.optional-dependencies]
@@ -2280,9 +2277,9 @@ dependencies = [
     { name = "isaacsim-kernel" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-app/isaacsim_app-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:d712f569d3fc80d1c826732a92afcfadc4f4528e1fc2fb95dc7b0a3fc068fac0" },
-    { url = "https://pypi.nvidia.com/isaacsim-app/isaacsim_app-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:aa3cd2ae94489d6818186afd722a31e4fc82018ff3e8a4d07199a93d500a84e2" },
-    { url = "https://pypi.nvidia.com/isaacsim-app/isaacsim_app-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:208c5f169aaf158df7f2f10ba1f3ceb266f37a43be78c3dd491ad8fb6d17d986" },
+    { url = "https://pypi.nvidia.cn/isaacsim-app/isaacsim_app-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:d712f569d3fc80d1c826732a92afcfadc4f4528e1fc2fb95dc7b0a3fc068fac0" },
+    { url = "https://pypi.nvidia.cn/isaacsim-app/isaacsim_app-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:aa3cd2ae94489d6818186afd722a31e4fc82018ff3e8a4d07199a93d500a84e2" },
+    { url = "https://pypi.nvidia.cn/isaacsim-app/isaacsim_app-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:208c5f169aaf158df7f2f10ba1f3ceb266f37a43be78c3dd491ad8fb6d17d986" },
 ]
 
 [[package]]
@@ -2294,9 +2291,9 @@ dependencies = [
     { name = "isaacsim-utils" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-asset/isaacsim_asset-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:3896cdf0cd415496e4e6d105d6e0c089240a2ed0d482b691ba771db6f3cbf0dc" },
-    { url = "https://pypi.nvidia.com/isaacsim-asset/isaacsim_asset-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:cf1338595aa99fc4d4aafb0d091883864332003f602f89a8e15d1e424ebdd97a" },
-    { url = "https://pypi.nvidia.com/isaacsim-asset/isaacsim_asset-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:384aed500a4ccc5747b0a8b58cca61ebd9e3874f16670f70ff2a4ce424096969" },
+    { url = "https://pypi.nvidia.cn/isaacsim-asset/isaacsim_asset-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:3896cdf0cd415496e4e6d105d6e0c089240a2ed0d482b691ba771db6f3cbf0dc" },
+    { url = "https://pypi.nvidia.cn/isaacsim-asset/isaacsim_asset-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:cf1338595aa99fc4d4aafb0d091883864332003f602f89a8e15d1e424ebdd97a" },
+    { url = "https://pypi.nvidia.cn/isaacsim-asset/isaacsim_asset-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:384aed500a4ccc5747b0a8b58cca61ebd9e3874f16670f70ff2a4ce424096969" },
 ]
 
 [[package]]
@@ -2313,7 +2310,7 @@ dependencies = [
     { name = "usd-optimize" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-asset-isolated/isaacsim_asset_isolated-6.1.0.0-py3-none-any.whl", hash = "sha256:b1f9a9d03924512f3d85ef9030f33657adc9be52269e140415e7e7f4f9fc7969" },
+    { url = "https://pypi.nvidia.cn/isaacsim-asset-isolated/isaacsim_asset_isolated-6.1.0.0-py3-none-any.whl", hash = "sha256:b1f9a9d03924512f3d85ef9030f33657adc9be52269e140415e7e7f4f9fc7969" },
 ]
 
 [[package]]
@@ -2324,9 +2321,9 @@ dependencies = [
     { name = "isaacsim-robot" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-benchmark/isaacsim_benchmark-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:e9a5787de5fce06441e3497c610c6c783eb2ba387497e5e13c7d233046cbdaff" },
-    { url = "https://pypi.nvidia.com/isaacsim-benchmark/isaacsim_benchmark-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:c5090850b594ddd7b422f2b7c9da14cd6a61e3ab0943bf5bbc3d6f1eacff9dfb" },
-    { url = "https://pypi.nvidia.com/isaacsim-benchmark/isaacsim_benchmark-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:4a88ec1b64c44ff8f42a32369cadec7d45b049bbbb26ab1933bad78575a30a6d" },
+    { url = "https://pypi.nvidia.cn/isaacsim-benchmark/isaacsim_benchmark-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:e9a5787de5fce06441e3497c610c6c783eb2ba387497e5e13c7d233046cbdaff" },
+    { url = "https://pypi.nvidia.cn/isaacsim-benchmark/isaacsim_benchmark-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:c5090850b594ddd7b422f2b7c9da14cd6a61e3ab0943bf5bbc3d6f1eacff9dfb" },
+    { url = "https://pypi.nvidia.cn/isaacsim-benchmark/isaacsim_benchmark-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:4a88ec1b64c44ff8f42a32369cadec7d45b049bbbb26ab1933bad78575a30a6d" },
 ]
 
 [[package]]
@@ -2337,9 +2334,9 @@ dependencies = [
     { name = "isaacsim-kernel" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-code-editor/isaacsim_code_editor-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:ab6b0fb21cf4caec2d459568c853ec804ed04d30d3656484a864dd85ff8afde9" },
-    { url = "https://pypi.nvidia.com/isaacsim-code-editor/isaacsim_code_editor-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:145f281814263424ff14ebe47f834bba62700a409489369a1b4e58caa5c5c47e" },
-    { url = "https://pypi.nvidia.com/isaacsim-code-editor/isaacsim_code_editor-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:d32901ef4165cf355239b019bdb8ef29d162b40796e9b56145d9018be32fd7ff" },
+    { url = "https://pypi.nvidia.cn/isaacsim-code-editor/isaacsim_code_editor-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:ab6b0fb21cf4caec2d459568c853ec804ed04d30d3656484a864dd85ff8afde9" },
+    { url = "https://pypi.nvidia.cn/isaacsim-code-editor/isaacsim_code_editor-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:145f281814263424ff14ebe47f834bba62700a409489369a1b4e58caa5c5c47e" },
+    { url = "https://pypi.nvidia.cn/isaacsim-code-editor/isaacsim_code_editor-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:d32901ef4165cf355239b019bdb8ef29d162b40796e9b56145d9018be32fd7ff" },
 ]
 
 [[package]]
@@ -2411,9 +2408,9 @@ dependencies = [
     { name = "urdf-usd-converter" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-core/isaacsim_core-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:fcf7aa812a576f4bcf220e3322683916d326fc856688aea8123450fba235f4c3" },
-    { url = "https://pypi.nvidia.com/isaacsim-core/isaacsim_core-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:2dbde879bc55c1e30a4579539eef250c27fd3e3bc17dc909ef90b16b0aedb8ad" },
-    { url = "https://pypi.nvidia.com/isaacsim-core/isaacsim_core-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:8b618af3335684c56f2aaf65dbd59b6ba842f5fc48023a323631e2a7fbfb40e5" },
+    { url = "https://pypi.nvidia.cn/isaacsim-core/isaacsim_core-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:fcf7aa812a576f4bcf220e3322683916d326fc856688aea8123450fba235f4c3" },
+    { url = "https://pypi.nvidia.cn/isaacsim-core/isaacsim_core-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:2dbde879bc55c1e30a4579539eef250c27fd3e3bc17dc909ef90b16b0aedb8ad" },
+    { url = "https://pypi.nvidia.cn/isaacsim-core/isaacsim_core-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:8b618af3335684c56f2aaf65dbd59b6ba842f5fc48023a323631e2a7fbfb40e5" },
 ]
 
 [[package]]
@@ -2425,9 +2422,9 @@ dependencies = [
     { name = "isaacsim-ros1" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-cortex/isaacsim_cortex-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:207f416437062180bb40fea69ad86433ae6c2fec50cfd25d930098f0e6495dce" },
-    { url = "https://pypi.nvidia.com/isaacsim-cortex/isaacsim_cortex-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:df0f3133aa9aa2e43188942a7e3b5d62af73c5aeeb6c9c59cf1bbd10ad63db6a" },
-    { url = "https://pypi.nvidia.com/isaacsim-cortex/isaacsim_cortex-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:85953f6b5b009ebe7d317c06507f50d4d8dc622c3900ee034e1c3c47f780bbb9" },
+    { url = "https://pypi.nvidia.cn/isaacsim-cortex/isaacsim_cortex-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:207f416437062180bb40fea69ad86433ae6c2fec50cfd25d930098f0e6495dce" },
+    { url = "https://pypi.nvidia.cn/isaacsim-cortex/isaacsim_cortex-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:df0f3133aa9aa2e43188942a7e3b5d62af73c5aeeb6c9c59cf1bbd10ad63db6a" },
+    { url = "https://pypi.nvidia.cn/isaacsim-cortex/isaacsim_cortex-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:85953f6b5b009ebe7d317c06507f50d4d8dc622c3900ee034e1c3c47f780bbb9" },
 ]
 
 [[package]]
@@ -2438,9 +2435,9 @@ dependencies = [
     { name = "isaacsim-cortex" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-example/isaacsim_example-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:c8a5873329247099010fe928c4451d332579be434ac58a55230705ad46d877d4" },
-    { url = "https://pypi.nvidia.com/isaacsim-example/isaacsim_example-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:0d7364274750bace6f04d0529f5828b98ecd8c489bcd198f63b9b517e85e4909" },
-    { url = "https://pypi.nvidia.com/isaacsim-example/isaacsim_example-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:13259b9e2017b3473b6d326031b58f5cff8a5aea7bd94dea160eba002befd31b" },
+    { url = "https://pypi.nvidia.cn/isaacsim-example/isaacsim_example-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:c8a5873329247099010fe928c4451d332579be434ac58a55230705ad46d877d4" },
+    { url = "https://pypi.nvidia.cn/isaacsim-example/isaacsim_example-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:0d7364274750bace6f04d0529f5828b98ecd8c489bcd198f63b9b517e85e4909" },
+    { url = "https://pypi.nvidia.cn/isaacsim-example/isaacsim_example-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:13259b9e2017b3473b6d326031b58f5cff8a5aea7bd94dea160eba002befd31b" },
 ]
 
 [[package]]
@@ -2448,9 +2445,9 @@ name = "isaacsim-extscache-kit"
 version = "6.1.0.0"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-extscache-kit/isaacsim_extscache_kit-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:18e495cd522cf3a7f3129f5426fb4230dbc29b9024840b69e894ab898998b24f" },
-    { url = "https://pypi.nvidia.com/isaacsim-extscache-kit/isaacsim_extscache_kit-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:3e2e96b0badc486000e3cbee3ccabc1f7eb9b1191c7334a25a39b689ca535e09" },
-    { url = "https://pypi.nvidia.com/isaacsim-extscache-kit/isaacsim_extscache_kit-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:2363d41442b69f76ae63f11286072d9820716b15724e19bee098bc20f5d83348" },
+    { url = "https://pypi.nvidia.cn/isaacsim-extscache-kit/isaacsim_extscache_kit-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:18e495cd522cf3a7f3129f5426fb4230dbc29b9024840b69e894ab898998b24f" },
+    { url = "https://pypi.nvidia.cn/isaacsim-extscache-kit/isaacsim_extscache_kit-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:3e2e96b0badc486000e3cbee3ccabc1f7eb9b1191c7334a25a39b689ca535e09" },
+    { url = "https://pypi.nvidia.cn/isaacsim-extscache-kit/isaacsim_extscache_kit-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:2363d41442b69f76ae63f11286072d9820716b15724e19bee098bc20f5d83348" },
 ]
 
 [[package]]
@@ -2458,9 +2455,9 @@ name = "isaacsim-extscache-kit-sdk"
 version = "6.1.0.0"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-extscache-kit-sdk/isaacsim_extscache_kit_sdk-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:ab49252d9e1a612258072b4cdac575276d3a1bd7c45d8d2dd4e3ba55d5d0bb15" },
-    { url = "https://pypi.nvidia.com/isaacsim-extscache-kit-sdk/isaacsim_extscache_kit_sdk-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:dd587ecb5066427a47063ee117a716e33498bf5e0eee1f8f4f77d502333fadd8" },
-    { url = "https://pypi.nvidia.com/isaacsim-extscache-kit-sdk/isaacsim_extscache_kit_sdk-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:600ada269ab09de7c806f0d506af04e3593b9db12655e6eb02e51929738dcce3" },
+    { url = "https://pypi.nvidia.cn/isaacsim-extscache-kit-sdk/isaacsim_extscache_kit_sdk-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:ab49252d9e1a612258072b4cdac575276d3a1bd7c45d8d2dd4e3ba55d5d0bb15" },
+    { url = "https://pypi.nvidia.cn/isaacsim-extscache-kit-sdk/isaacsim_extscache_kit_sdk-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:dd587ecb5066427a47063ee117a716e33498bf5e0eee1f8f4f77d502333fadd8" },
+    { url = "https://pypi.nvidia.cn/isaacsim-extscache-kit-sdk/isaacsim_extscache_kit_sdk-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:600ada269ab09de7c806f0d506af04e3593b9db12655e6eb02e51929738dcce3" },
 ]
 
 [[package]]
@@ -2468,9 +2465,9 @@ name = "isaacsim-extscache-physics"
 version = "6.1.0.0"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-extscache-physics/isaacsim_extscache_physics-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:c85d792fa9f15696582e32577ff3ba11387ed8d4b6befd95a55898798f647439" },
-    { url = "https://pypi.nvidia.com/isaacsim-extscache-physics/isaacsim_extscache_physics-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:94ab00d5e878148bf92335e068c38e7ba995fc083607781dc788ccf0df14be23" },
-    { url = "https://pypi.nvidia.com/isaacsim-extscache-physics/isaacsim_extscache_physics-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:0c4200722b2b5878848abb2c12e95867bad2fc434b3b9c4d959a3b73d371bd19" },
+    { url = "https://pypi.nvidia.cn/isaacsim-extscache-physics/isaacsim_extscache_physics-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:c85d792fa9f15696582e32577ff3ba11387ed8d4b6befd95a55898798f647439" },
+    { url = "https://pypi.nvidia.cn/isaacsim-extscache-physics/isaacsim_extscache_physics-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:94ab00d5e878148bf92335e068c38e7ba995fc083607781dc788ccf0df14be23" },
+    { url = "https://pypi.nvidia.cn/isaacsim-extscache-physics/isaacsim_extscache_physics-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:0c4200722b2b5878848abb2c12e95867bad2fc434b3b9c4d959a3b73d371bd19" },
 ]
 
 [[package]]
@@ -2481,9 +2478,9 @@ dependencies = [
     { name = "isaacsim-core" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-gui/isaacsim_gui-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:782e41a351a7564d5490143a5ff7bf17471eea6829e28e07beb89107e93394bf" },
-    { url = "https://pypi.nvidia.com/isaacsim-gui/isaacsim_gui-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:9a911be5d95d9451b5403a6d3040767fcd95e1309b51a10a0457daafb7e021af" },
-    { url = "https://pypi.nvidia.com/isaacsim-gui/isaacsim_gui-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:2d76a5475e10a311f07208bd8f9204971b71e97a953964d44fb099f7cdbf5b6a" },
+    { url = "https://pypi.nvidia.cn/isaacsim-gui/isaacsim_gui-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:782e41a351a7564d5490143a5ff7bf17471eea6829e28e07beb89107e93394bf" },
+    { url = "https://pypi.nvidia.cn/isaacsim-gui/isaacsim_gui-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:9a911be5d95d9451b5403a6d3040767fcd95e1309b51a10a0457daafb7e021af" },
+    { url = "https://pypi.nvidia.cn/isaacsim-gui/isaacsim_gui-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:2d76a5475e10a311f07208bd8f9204971b71e97a953964d44fb099f7cdbf5b6a" },
 ]
 
 [[package]]
@@ -2533,9 +2530,9 @@ dependencies = [
     { name = "yarl" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-kernel/isaacsim_kernel-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:f8beb7f2f0c5d4fce6ae80850987e0a93fb950adaad8cb1b2faac8ebd46c3e31" },
-    { url = "https://pypi.nvidia.com/isaacsim-kernel/isaacsim_kernel-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:fe795f2d965e8fb82befa71071a13687aba519d61f980820117b02261ae3cec7" },
-    { url = "https://pypi.nvidia.com/isaacsim-kernel/isaacsim_kernel-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:d34ed3dc12e32068de7572d670c5da518a521c6b9c8d0e3ff656862cce9fded7" },
+    { url = "https://pypi.nvidia.cn/isaacsim-kernel/isaacsim_kernel-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:f8beb7f2f0c5d4fce6ae80850987e0a93fb950adaad8cb1b2faac8ebd46c3e31" },
+    { url = "https://pypi.nvidia.cn/isaacsim-kernel/isaacsim_kernel-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:fe795f2d965e8fb82befa71071a13687aba519d61f980820117b02261ae3cec7" },
+    { url = "https://pypi.nvidia.cn/isaacsim-kernel/isaacsim_kernel-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:d34ed3dc12e32068de7572d670c5da518a521c6b9c8d0e3ff656862cce9fded7" },
 ]
 
 [[package]]
@@ -2547,9 +2544,9 @@ dependencies = [
     { name = "isaacsim-storage" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-replicator/isaacsim_replicator-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:06c85e0d5a70a7e685ee2f9490db017f4296263618da968d763ecae56a59e8f1" },
-    { url = "https://pypi.nvidia.com/isaacsim-replicator/isaacsim_replicator-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:6c69c090e42100a49c333bf46a6e94632bc121100a4c701f97852fdf00cb0d3f" },
-    { url = "https://pypi.nvidia.com/isaacsim-replicator/isaacsim_replicator-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:5b31ab293ec0c7522d2ef9f889d7afa3460cdd261d930b6565b437a5af9c6e05" },
+    { url = "https://pypi.nvidia.cn/isaacsim-replicator/isaacsim_replicator-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:06c85e0d5a70a7e685ee2f9490db017f4296263618da968d763ecae56a59e8f1" },
+    { url = "https://pypi.nvidia.cn/isaacsim-replicator/isaacsim_replicator-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:6c69c090e42100a49c333bf46a6e94632bc121100a4c701f97852fdf00cb0d3f" },
+    { url = "https://pypi.nvidia.cn/isaacsim-replicator/isaacsim_replicator-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:5b31ab293ec0c7522d2ef9f889d7afa3460cdd261d930b6565b437a5af9c6e05" },
 ]
 
 [[package]]
@@ -2561,9 +2558,9 @@ dependencies = [
     { name = "isaacsim-robot" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-rl/isaacsim_rl-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:cf44eecf507cb6b0a4d86320ee2ca30071f0896e5539a5d2108cec74b561b07f" },
-    { url = "https://pypi.nvidia.com/isaacsim-rl/isaacsim_rl-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:441d1a0af29643c4058ee666368ea7a4e0d72874623a1ff081af8c7151cc53d6" },
-    { url = "https://pypi.nvidia.com/isaacsim-rl/isaacsim_rl-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:e0a5f186f86c24ae77e7d223dbe07938d49919cfd13aeeb55381395b2dda825e" },
+    { url = "https://pypi.nvidia.cn/isaacsim-rl/isaacsim_rl-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:cf44eecf507cb6b0a4d86320ee2ca30071f0896e5539a5d2108cec74b561b07f" },
+    { url = "https://pypi.nvidia.cn/isaacsim-rl/isaacsim_rl-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:441d1a0af29643c4058ee666368ea7a4e0d72874623a1ff081af8c7151cc53d6" },
+    { url = "https://pypi.nvidia.cn/isaacsim-rl/isaacsim_rl-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:e0a5f186f86c24ae77e7d223dbe07938d49919cfd13aeeb55381395b2dda825e" },
 ]
 
 [[package]]
@@ -2581,9 +2578,9 @@ dependencies = [
     { name = "transitions" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-robot/isaacsim_robot-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:9b2031cd9ff45d1cf5f8bc2e40433a32ce2e4cebb29ec71f85ccf2bd86b387ef" },
-    { url = "https://pypi.nvidia.com/isaacsim-robot/isaacsim_robot-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:e5f28c9901343ee09edac33170f03506875f71dd675c1565deeb1e9f41a7ae0c" },
-    { url = "https://pypi.nvidia.com/isaacsim-robot/isaacsim_robot-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:dec24582ba1a44e262e6d9d3a7ea5fef6bc28b253eeb3804fb3ecd4572352ad0" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot/isaacsim_robot-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:9b2031cd9ff45d1cf5f8bc2e40433a32ce2e4cebb29ec71f85ccf2bd86b387ef" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot/isaacsim_robot-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:e5f28c9901343ee09edac33170f03506875f71dd675c1565deeb1e9f41a7ae0c" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot/isaacsim_robot-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:dec24582ba1a44e262e6d9d3a7ea5fef6bc28b253eeb3804fb3ecd4572352ad0" },
 ]
 
 [[package]]
@@ -2594,9 +2591,9 @@ dependencies = [
     { name = "isaacsim-gui" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-robot-motion/isaacsim_robot_motion-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:f770d01601bb24536bdf25aa00de13cfcc82993d5dedd5fe97b0ee7b39c17694" },
-    { url = "https://pypi.nvidia.com/isaacsim-robot-motion/isaacsim_robot_motion-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:e807b6879b6fb680f8348edfd3507da4f5971b3b8d1dc39142b6eaabae3b9856" },
-    { url = "https://pypi.nvidia.com/isaacsim-robot-motion/isaacsim_robot_motion-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:43911d5a26959306ae20f6066d76b65b279a4a2cb8186b361d191f5047a82322" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot-motion/isaacsim_robot_motion-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:f770d01601bb24536bdf25aa00de13cfcc82993d5dedd5fe97b0ee7b39c17694" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot-motion/isaacsim_robot_motion-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:e807b6879b6fb680f8348edfd3507da4f5971b3b8d1dc39142b6eaabae3b9856" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot-motion/isaacsim_robot_motion-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:43911d5a26959306ae20f6066d76b65b279a4a2cb8186b361d191f5047a82322" },
 ]
 
 [[package]]
@@ -2607,7 +2604,7 @@ dependencies = [
     { name = "usd-exchange" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-robot-schema/isaacsim_robot_schema-6.1.0.0-py3-none-any.whl", hash = "sha256:b75235cca20fca732f3d0c9834f8d894a89b074220b115198286e28b41c32400" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot-schema/isaacsim_robot_schema-6.1.0.0-py3-none-any.whl", hash = "sha256:b75235cca20fca732f3d0c9834f8d894a89b074220b115198286e28b41c32400" },
 ]
 
 [[package]]
@@ -2618,9 +2615,9 @@ dependencies = [
     { name = "isaacsim-robot-motion" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-robot-setup/isaacsim_robot_setup-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:8a14a483c6e9861ba8badf178f864a15dbc35ccb88d78ef9a07965d2ae6acfcb" },
-    { url = "https://pypi.nvidia.com/isaacsim-robot-setup/isaacsim_robot_setup-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:c20c36e8db72166ef0d2089a13ce5476658ff1f89589db531fb2bc1092e47f44" },
-    { url = "https://pypi.nvidia.com/isaacsim-robot-setup/isaacsim_robot_setup-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:fd24b352c960c7f63342601b2a8e1effb27ab6d1614b15ccdae01dfa0555dd44" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot-setup/isaacsim_robot_setup-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:8a14a483c6e9861ba8badf178f864a15dbc35ccb88d78ef9a07965d2ae6acfcb" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot-setup/isaacsim_robot_setup-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:c20c36e8db72166ef0d2089a13ce5476658ff1f89589db531fb2bc1092e47f44" },
+    { url = "https://pypi.nvidia.cn/isaacsim-robot-setup/isaacsim_robot_setup-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:fd24b352c960c7f63342601b2a8e1effb27ab6d1614b15ccdae01dfa0555dd44" },
 ]
 
 [[package]]
@@ -2631,9 +2628,9 @@ dependencies = [
     { name = "isaacsim-sensor" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-ros1/isaacsim_ros1-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:db617d49062d9129d5e154ce5e3a91568ad996fd1f64bb2790a376387743e117" },
-    { url = "https://pypi.nvidia.com/isaacsim-ros1/isaacsim_ros1-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:87537710b5560762fa0a468f3feb4f410f917ff64e739d267dea3615ea51d0a5" },
-    { url = "https://pypi.nvidia.com/isaacsim-ros1/isaacsim_ros1-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:a27f69349576915e7738b574de61f9be00d15ea8d661cf0078ce0aa89e04d59e" },
+    { url = "https://pypi.nvidia.cn/isaacsim-ros1/isaacsim_ros1-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:db617d49062d9129d5e154ce5e3a91568ad996fd1f64bb2790a376387743e117" },
+    { url = "https://pypi.nvidia.cn/isaacsim-ros1/isaacsim_ros1-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:87537710b5560762fa0a468f3feb4f410f917ff64e739d267dea3615ea51d0a5" },
+    { url = "https://pypi.nvidia.cn/isaacsim-ros1/isaacsim_ros1-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:a27f69349576915e7738b574de61f9be00d15ea8d661cf0078ce0aa89e04d59e" },
 ]
 
 [[package]]
@@ -2644,9 +2641,9 @@ dependencies = [
     { name = "isaacsim-sensor" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-ros2/isaacsim_ros2-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:1f2d98b0f089a219266dc30fadf0eea9dbc7b0086ab1f11367f139d6cbbe28cb" },
-    { url = "https://pypi.nvidia.com/isaacsim-ros2/isaacsim_ros2-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:f8455420dfabbcecd8150c1df5d7d1eac691938e311ed634bdcca43b9a793ae9" },
-    { url = "https://pypi.nvidia.com/isaacsim-ros2/isaacsim_ros2-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:a263eaff1f2e4ca9795487b1cedeff364fe270ad0f2e470c6d2ca55b7041cb74" },
+    { url = "https://pypi.nvidia.cn/isaacsim-ros2/isaacsim_ros2-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:1f2d98b0f089a219266dc30fadf0eea9dbc7b0086ab1f11367f139d6cbbe28cb" },
+    { url = "https://pypi.nvidia.cn/isaacsim-ros2/isaacsim_ros2-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:f8455420dfabbcecd8150c1df5d7d1eac691938e311ed634bdcca43b9a793ae9" },
+    { url = "https://pypi.nvidia.cn/isaacsim-ros2/isaacsim_ros2-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:a263eaff1f2e4ca9795487b1cedeff364fe270ad0f2e470c6d2ca55b7041cb74" },
 ]
 
 [[package]]
@@ -2659,9 +2656,9 @@ dependencies = [
     { name = "isaacsim-utils" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-sensor/isaacsim_sensor-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:7aa451d54773b74268f6ab4b11baddf86f9ab6aef3f80a5a8337cc32a7fa1dad" },
-    { url = "https://pypi.nvidia.com/isaacsim-sensor/isaacsim_sensor-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:eaa4d80b1fb2933835c580eba6c2b7139cddf427d320dd275b0ed0b3f4ba7acf" },
-    { url = "https://pypi.nvidia.com/isaacsim-sensor/isaacsim_sensor-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:3abda9caf0427dc30b520d1d14430d74f32217cd59ce5b7f4bc37d41e79b88b5" },
+    { url = "https://pypi.nvidia.cn/isaacsim-sensor/isaacsim_sensor-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:7aa451d54773b74268f6ab4b11baddf86f9ab6aef3f80a5a8337cc32a7fa1dad" },
+    { url = "https://pypi.nvidia.cn/isaacsim-sensor/isaacsim_sensor-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:eaa4d80b1fb2933835c580eba6c2b7139cddf427d320dd275b0ed0b3f4ba7acf" },
+    { url = "https://pypi.nvidia.cn/isaacsim-sensor/isaacsim_sensor-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:3abda9caf0427dc30b520d1d14430d74f32217cd59ce5b7f4bc37d41e79b88b5" },
 ]
 
 [[package]]
@@ -2672,9 +2669,9 @@ dependencies = [
     { name = "isaacsim-kernel" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-storage/isaacsim_storage-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:5ce5914984cf85a5328a9afee5f39bed4b3dfbfbfc5995474f1a9c797148b25e" },
-    { url = "https://pypi.nvidia.com/isaacsim-storage/isaacsim_storage-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:2f7fd9325300c4baa528c26f4df6b37ae3f0093db7e30c6b8831e6b33a5cb37b" },
-    { url = "https://pypi.nvidia.com/isaacsim-storage/isaacsim_storage-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:9c63ba8bed4eceaddc5a351ef98a7f43afdf0e0fb034df7ef3f47877d3acfc72" },
+    { url = "https://pypi.nvidia.cn/isaacsim-storage/isaacsim_storage-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:5ce5914984cf85a5328a9afee5f39bed4b3dfbfbfc5995474f1a9c797148b25e" },
+    { url = "https://pypi.nvidia.cn/isaacsim-storage/isaacsim_storage-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:2f7fd9325300c4baa528c26f4df6b37ae3f0093db7e30c6b8831e6b33a5cb37b" },
+    { url = "https://pypi.nvidia.cn/isaacsim-storage/isaacsim_storage-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:9c63ba8bed4eceaddc5a351ef98a7f43afdf0e0fb034df7ef3f47877d3acfc72" },
 ]
 
 [[package]]
@@ -2686,9 +2683,9 @@ dependencies = [
     { name = "isaacsim-storage" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-template/isaacsim_template-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:c2a6ec91208828c840baee4495935589ac17507775654260623483bf9651345e" },
-    { url = "https://pypi.nvidia.com/isaacsim-template/isaacsim_template-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:bf5660b1f6aecfce33f81aa5bcedc752d66a7f85e467f98833519cabe1e3ec7c" },
-    { url = "https://pypi.nvidia.com/isaacsim-template/isaacsim_template-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:77be844a0f643cd2ecb4315cfb5ecb5437a117d0b9ee64aab47e1adcf31c8ddb" },
+    { url = "https://pypi.nvidia.cn/isaacsim-template/isaacsim_template-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:c2a6ec91208828c840baee4495935589ac17507775654260623483bf9651345e" },
+    { url = "https://pypi.nvidia.cn/isaacsim-template/isaacsim_template-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:bf5660b1f6aecfce33f81aa5bcedc752d66a7f85e467f98833519cabe1e3ec7c" },
+    { url = "https://pypi.nvidia.cn/isaacsim-template/isaacsim_template-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:77be844a0f643cd2ecb4315cfb5ecb5437a117d0b9ee64aab47e1adcf31c8ddb" },
 ]
 
 [[package]]
@@ -2699,9 +2696,9 @@ dependencies = [
     { name = "isaacsim-robot" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-test/isaacsim_test-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:1de2ba05d672bef43d25233a8beb5a96f2c496a9b29c0f4dace29d0f6bd25955" },
-    { url = "https://pypi.nvidia.com/isaacsim-test/isaacsim_test-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:1c037cdf2623ade77cfae8c350ec9a903b2e7ebae0a25efabb9e2ba362d73111" },
-    { url = "https://pypi.nvidia.com/isaacsim-test/isaacsim_test-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:ac8517fd32e2dc6a770058c34279178417c340de639505ee151c3715834536df" },
+    { url = "https://pypi.nvidia.cn/isaacsim-test/isaacsim_test-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:1de2ba05d672bef43d25233a8beb5a96f2c496a9b29c0f4dace29d0f6bd25955" },
+    { url = "https://pypi.nvidia.cn/isaacsim-test/isaacsim_test-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:1c037cdf2623ade77cfae8c350ec9a903b2e7ebae0a25efabb9e2ba362d73111" },
+    { url = "https://pypi.nvidia.cn/isaacsim-test/isaacsim_test-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:ac8517fd32e2dc6a770058c34279178417c340de639505ee151c3715834536df" },
 ]
 
 [[package]]
@@ -2712,9 +2709,9 @@ dependencies = [
     { name = "isaacsim-gui" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacsim-utils/isaacsim_utils-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:a9d9fce32e2e44f4d3aef2345efaa7bcb1299c306e74e796ef1b8ad09590eb81" },
-    { url = "https://pypi.nvidia.com/isaacsim-utils/isaacsim_utils-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:5582f31bc825bdc92623ea6c667c69777cab57d096782d5801af586e14e81d59" },
-    { url = "https://pypi.nvidia.com/isaacsim-utils/isaacsim_utils-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:31defa689d5b57d3ad877f77e0d86d24d30c25ecb039c359b0cdef78e9aa1aa6" },
+    { url = "https://pypi.nvidia.cn/isaacsim-utils/isaacsim_utils-6.1.0.0-cp312-none-manylinux_2_35_aarch64.whl", hash = "sha256:a9d9fce32e2e44f4d3aef2345efaa7bcb1299c306e74e796ef1b8ad09590eb81" },
+    { url = "https://pypi.nvidia.cn/isaacsim-utils/isaacsim_utils-6.1.0.0-cp312-none-manylinux_2_35_x86_64.whl", hash = "sha256:5582f31bc825bdc92623ea6c667c69777cab57d096782d5801af586e14e81d59" },
+    { url = "https://pypi.nvidia.cn/isaacsim-utils/isaacsim_utils-6.1.0.0-cp312-none-win_amd64.whl", hash = "sha256:31defa689d5b57d3ad877f77e0d86d24d30c25ecb039c359b0cdef78e9aa1aa6" },
 ]
 
 [[package]]
@@ -2726,7 +2723,7 @@ dependencies = [
     { name = "pyyaml" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/isaacteleop/isaacteleop-1.4.145-cp312-cp312-manylinux_2_35_x86_64.whl", hash = "sha256:b18b210535b28516593bb6e85ffb70a6e8265d9547365c818e38920184ee7b40" },
+    { url = "https://pypi.nvidia.cn/isaacteleop/isaacteleop-1.4.145-cp312-cp312-manylinux_2_35_x86_64.whl", hash = "sha256:b18b210535b28516593bb6e85ffb70a6e8265d9547365c818e38920184ee7b40" },
 ]
 
 [package.optional-dependencies]
@@ -2930,7 +2927,7 @@ dependencies = [
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/leapp/leapp-0.6.1-py3-none-any.whl", hash = "sha256:b41bb1ca2a0019216428feeee5463603d22022828ab95badb9334f88e5e254dc" },
+    { url = "https://pypi.nvidia.cn/leapp/leapp-0.6.1-py3-none-any.whl", hash = "sha256:b41bb1ca2a0019216428feeee5463603d22022828ab95badb9334f88e5e254dc" },
 ]
 
 [[package]]
@@ -3421,8 +3418,8 @@ dependencies = [
     { name = "nvidia-cuda-nvrtc" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cublas/nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:b7a210458267ac818974c53038fbec2e969d5c99f305ab15c72522fa9f001dd5" },
-    { url = "https://pypi.nvidia.com/nvidia-cublas/nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:37936a16db8fe4ac1f065c2139360608a543a09275cb1a1af612e08cfa065436" },
+    { url = "https://pypi.nvidia.cn/nvidia-cublas/nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:b7a210458267ac818974c53038fbec2e969d5c99f305ab15c72522fa9f001dd5" },
+    { url = "https://pypi.nvidia.cn/nvidia-cublas/nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:37936a16db8fe4ac1f065c2139360608a543a09275cb1a1af612e08cfa065436" },
 ]
 
 [[package]]
@@ -3430,8 +3427,8 @@ name = "nvidia-cuda-cupti"
 version = "13.0.85"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cuda-cupti/nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_aarch64.whl", hash = "sha256:796bd679890ee55fb14a94629b698b6db54bcfd833d391d5e94017dd9d7d3151" },
-    { url = "https://pypi.nvidia.com/nvidia-cuda-cupti/nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl", hash = "sha256:4eb01c08e859bf924d222250d2e8f8b8ff6d3db4721288cf35d14252a4d933c8" },
+    { url = "https://pypi.nvidia.cn/nvidia-cuda-cupti/nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_aarch64.whl", hash = "sha256:796bd679890ee55fb14a94629b698b6db54bcfd833d391d5e94017dd9d7d3151" },
+    { url = "https://pypi.nvidia.cn/nvidia-cuda-cupti/nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl", hash = "sha256:4eb01c08e859bf924d222250d2e8f8b8ff6d3db4721288cf35d14252a4d933c8" },
 ]
 
 [[package]]
@@ -3439,8 +3436,8 @@ name = "nvidia-cuda-nvrtc"
 version = "13.0.88"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cuda-nvrtc/nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:ad9b6d2ead2435f11cbb6868809d2adeeee302e9bb94bcf0539c7a40d80e8575" },
-    { url = "https://pypi.nvidia.com/nvidia-cuda-nvrtc/nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:d27f20a0ca67a4bb34268a5e951033496c5b74870b868bacd046b1b8e0c3267b" },
+    { url = "https://pypi.nvidia.cn/nvidia-cuda-nvrtc/nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:ad9b6d2ead2435f11cbb6868809d2adeeee302e9bb94bcf0539c7a40d80e8575" },
+    { url = "https://pypi.nvidia.cn/nvidia-cuda-nvrtc/nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:d27f20a0ca67a4bb34268a5e951033496c5b74870b868bacd046b1b8e0c3267b" },
 ]
 
 [[package]]
@@ -3448,8 +3445,8 @@ name = "nvidia-cuda-runtime"
 version = "13.0.96"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cuda-runtime/nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:ef9bcbe90493a2b9d810e43d249adb3d02e98dd30200d86607d8d02687c43f55" },
-    { url = "https://pypi.nvidia.com/nvidia-cuda-runtime/nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:7f82250d7782aa23b6cfe765ecc7db554bd3c2870c43f3d1821f1d18aebf0548" },
+    { url = "https://pypi.nvidia.cn/nvidia-cuda-runtime/nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:ef9bcbe90493a2b9d810e43d249adb3d02e98dd30200d86607d8d02687c43f55" },
+    { url = "https://pypi.nvidia.cn/nvidia-cuda-runtime/nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:7f82250d7782aa23b6cfe765ecc7db554bd3c2870c43f3d1821f1d18aebf0548" },
 ]
 
 [[package]]
@@ -3460,8 +3457,8 @@ dependencies = [
     { name = "nvidia-cublas" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:e31454ae00094b0c55319d9d15b6fa2fc50a9e1c0f5c8c80fb75258234e731e1" },
-    { url = "https://pypi.nvidia.com/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:0c45dd8eeb50b603f07995b1b300c62ffe6a1980482b82b3bcf94a4ca9d49304" },
+    { url = "https://pypi.nvidia.cn/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:e31454ae00094b0c55319d9d15b6fa2fc50a9e1c0f5c8c80fb75258234e731e1" },
+    { url = "https://pypi.nvidia.cn/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:0c45dd8eeb50b603f07995b1b300c62ffe6a1980482b82b3bcf94a4ca9d49304" },
 ]
 
 [[package]]
@@ -3472,8 +3469,8 @@ dependencies = [
     { name = "nvidia-nvjitlink" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cufft/nvidia_cufft-12.0.0.61-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:2708c852ef8cd89d1d2068bdbece0aa188813a0c934db3779b9b1faa8442e5f5" },
-    { url = "https://pypi.nvidia.com/nvidia-cufft/nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:6c44f692dce8fd5ffd3e3df134b6cdb9c2f72d99cf40b62c32dde45eea9ddad3" },
+    { url = "https://pypi.nvidia.cn/nvidia-cufft/nvidia_cufft-12.0.0.61-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:2708c852ef8cd89d1d2068bdbece0aa188813a0c934db3779b9b1faa8442e5f5" },
+    { url = "https://pypi.nvidia.cn/nvidia-cufft/nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:6c44f692dce8fd5ffd3e3df134b6cdb9c2f72d99cf40b62c32dde45eea9ddad3" },
 ]
 
 [[package]]
@@ -3481,8 +3478,8 @@ name = "nvidia-cufile"
 version = "1.15.1.6"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cufile/nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:08a3ecefae5a01c7f5117351c64f17c7c62efa5fffdbe24fc7d298da19cd0b44" },
-    { url = "https://pypi.nvidia.com/nvidia-cufile/nvidia_cufile-1.15.1.6-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:bdc0deedc61f548bddf7733bdc216456c2fdb101d020e1ab4b88d232d5e2f6d1" },
+    { url = "https://pypi.nvidia.cn/nvidia-cufile/nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:08a3ecefae5a01c7f5117351c64f17c7c62efa5fffdbe24fc7d298da19cd0b44" },
+    { url = "https://pypi.nvidia.cn/nvidia-cufile/nvidia_cufile-1.15.1.6-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:bdc0deedc61f548bddf7733bdc216456c2fdb101d020e1ab4b88d232d5e2f6d1" },
 ]
 
 [[package]]
@@ -3490,8 +3487,8 @@ name = "nvidia-curand"
 version = "10.4.0.35"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-curand/nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:133df5a7509c3e292aaa2b477afd0194f06ce4ea24d714d616ff36439cee349a" },
-    { url = "https://pypi.nvidia.com/nvidia-curand/nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:1aee33a5da6e1db083fe2b90082def8915f30f3248d5896bcec36a579d941bfc" },
+    { url = "https://pypi.nvidia.cn/nvidia-curand/nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:133df5a7509c3e292aaa2b477afd0194f06ce4ea24d714d616ff36439cee349a" },
+    { url = "https://pypi.nvidia.cn/nvidia-curand/nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:1aee33a5da6e1db083fe2b90082def8915f30f3248d5896bcec36a579d941bfc" },
 ]
 
 [[package]]
@@ -3504,8 +3501,8 @@ dependencies = [
     { name = "nvidia-nvjitlink" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cusolver/nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:02c2457eaa9e39de20f880f4bd8820e6a1cfb9f9a34f820eb12a155aa5bc92d2" },
-    { url = "https://pypi.nvidia.com/nvidia-cusolver/nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:0a759da5dea5c0ea10fd307de75cdeb59e7ea4fcb8add0924859b944babf1112" },
+    { url = "https://pypi.nvidia.cn/nvidia-cusolver/nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:02c2457eaa9e39de20f880f4bd8820e6a1cfb9f9a34f820eb12a155aa5bc92d2" },
+    { url = "https://pypi.nvidia.cn/nvidia-cusolver/nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:0a759da5dea5c0ea10fd307de75cdeb59e7ea4fcb8add0924859b944babf1112" },
 ]
 
 [[package]]
@@ -3516,8 +3513,8 @@ dependencies = [
     { name = "nvidia-nvjitlink" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cusparse/nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:80bcc4662f23f1054ee334a15c72b8940402975e0eab63178fc7e670aa59472c" },
-    { url = "https://pypi.nvidia.com/nvidia-cusparse/nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:2b3c89c88d01ee0e477cb7f82ef60a11a4bcd57b6b87c33f789350b59759360b" },
+    { url = "https://pypi.nvidia.cn/nvidia-cusparse/nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:80bcc4662f23f1054ee334a15c72b8940402975e0eab63178fc7e670aa59472c" },
+    { url = "https://pypi.nvidia.cn/nvidia-cusparse/nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:2b3c89c88d01ee0e477cb7f82ef60a11a4bcd57b6b87c33f789350b59759360b" },
 ]
 
 [[package]]
@@ -3525,8 +3522,8 @@ name = "nvidia-cusparselt-cu13"
 version = "0.8.1"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cusparselt-cu13/nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_aarch64.whl", hash = "sha256:4dca476c50bf4780d46cd0bfbd82e2bc10a08e4fef7950917ce8d7578d22a23f" },
-    { url = "https://pypi.nvidia.com/nvidia-cusparselt-cu13/nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_x86_64.whl", hash = "sha256:786ce87568c303fadb5afcc7102d454cd3040d75f6f8626f5db460d1871f4dd0" },
+    { url = "https://pypi.nvidia.cn/nvidia-cusparselt-cu13/nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_aarch64.whl", hash = "sha256:4dca476c50bf4780d46cd0bfbd82e2bc10a08e4fef7950917ce8d7578d22a23f" },
+    { url = "https://pypi.nvidia.cn/nvidia-cusparselt-cu13/nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_x86_64.whl", hash = "sha256:786ce87568c303fadb5afcc7102d454cd3040d75f6f8626f5db460d1871f4dd0" },
 ]
 
 [[package]]
@@ -3534,8 +3531,8 @@ name = "nvidia-nccl-cu13"
 version = "2.29.7"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-nccl-cu13/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_aarch64.whl", hash = "sha256:674a12383e3c38a1bcccae7d4f3633b37852230b6047883cb2f4c2d1b36d9bf5" },
-    { url = "https://pypi.nvidia.com/nvidia-nccl-cu13/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_x86_64.whl", hash = "sha256:edd81538446786ec3b73972543e53bb43bcaf0bfc8ef76cb679fcc390ffe136d" },
+    { url = "https://pypi.nvidia.cn/nvidia-nccl-cu13/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_aarch64.whl", hash = "sha256:674a12383e3c38a1bcccae7d4f3633b37852230b6047883cb2f4c2d1b36d9bf5" },
+    { url = "https://pypi.nvidia.cn/nvidia-nccl-cu13/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_x86_64.whl", hash = "sha256:edd81538446786ec3b73972543e53bb43bcaf0bfc8ef76cb679fcc390ffe136d" },
 ]
 
 [[package]]
@@ -3543,8 +3540,8 @@ name = "nvidia-nvjitlink"
 version = "13.0.88"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-nvjitlink/nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:13a74f429e23b921c1109976abefacc69835f2f433ebd323d3946e11d804e47b" },
-    { url = "https://pypi.nvidia.com/nvidia-nvjitlink/nvidia_nvjitlink-13.0.88-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:e931536ccc7d467a98ba1d8b89ff7fa7f1fa3b13f2b0069118cd7f47bff07d0c" },
+    { url = "https://pypi.nvidia.cn/nvidia-nvjitlink/nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:13a74f429e23b921c1109976abefacc69835f2f433ebd323d3946e11d804e47b" },
+    { url = "https://pypi.nvidia.cn/nvidia-nvjitlink/nvidia_nvjitlink-13.0.88-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:e931536ccc7d467a98ba1d8b89ff7fa7f1fa3b13f2b0069118cd7f47bff07d0c" },
 ]
 
 [[package]]
@@ -3552,8 +3549,8 @@ name = "nvidia-nvshmem-cu13"
 version = "3.4.5"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-nvshmem-cu13/nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:6dc2a197f38e5d0376ad52cd1a2a3617d3cdc150fd5966f4aee9bcebb1d68fe9" },
-    { url = "https://pypi.nvidia.com/nvidia-nvshmem-cu13/nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:290f0a2ee94c9f3687a02502f3b9299a9f9fe826e6d0287ee18482e78d495b80" },
+    { url = "https://pypi.nvidia.cn/nvidia-nvshmem-cu13/nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:6dc2a197f38e5d0376ad52cd1a2a3617d3cdc150fd5966f4aee9bcebb1d68fe9" },
+    { url = "https://pypi.nvidia.cn/nvidia-nvshmem-cu13/nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:290f0a2ee94c9f3687a02502f3b9299a9f9fe826e6d0287ee18482e78d495b80" },
 ]
 
 [[package]]
@@ -3561,8 +3558,8 @@ name = "nvidia-nvtx"
 version = "13.0.85"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-nvtx/nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:4936d1d6780fbe68db454f5e72a42ff64d1fd6397df9f363ae786930fd5c1cd4" },
-    { url = "https://pypi.nvidia.com/nvidia-nvtx/nvidia_nvtx-13.0.85-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:cb7780edb6b14107373c835bf8b72e7a178bac7367e23da7acb108f973f157a6" },
+    { url = "https://pypi.nvidia.cn/nvidia-nvtx/nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:4936d1d6780fbe68db454f5e72a42ff64d1fd6397df9f363ae786930fd5c1cd4" },
+    { url = "https://pypi.nvidia.cn/nvidia-nvtx/nvidia_nvtx-13.0.85-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:cb7780edb6b14107373c835bf8b72e7a178bac7367e23da7acb108f973f157a6" },
 ]
 
 [[package]]
@@ -3729,9 +3726,9 @@ dependencies = [
     { name = "numpy" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/opencv-python-headless-noffmpeg/opencv_python_headless_noffmpeg-4.14.0.94rc1-cp312-cp312-manylinux_2_35_aarch64.whl", hash = "sha256:5dbef0271e98e088b6142d2bf3d9ad1dfb593b0347826bcc0dc4ba62320333cd" },
-    { url = "https://pypi.nvidia.com/opencv-python-headless-noffmpeg/opencv_python_headless_noffmpeg-4.14.0.94rc1-cp312-cp312-manylinux_2_35_x86_64.whl", hash = "sha256:758e5c9fbee25005c9d3fc163d9c66443af7a1776789a75683a630d1ed974393" },
-    { url = "https://pypi.nvidia.com/opencv-python-headless-noffmpeg/opencv_python_headless_noffmpeg-4.14.0.94rc1-cp312-cp312-win_amd64.whl", hash = "sha256:631eda3fc2ebc98b33ed35698f57eea65cd3983171f21a9fc1f83e00ca86e96e" },
+    { url = "https://pypi.nvidia.cn/opencv-python-headless-noffmpeg/opencv_python_headless_noffmpeg-4.14.0.94rc1-cp312-cp312-manylinux_2_35_aarch64.whl", hash = "sha256:5dbef0271e98e088b6142d2bf3d9ad1dfb593b0347826bcc0dc4ba62320333cd" },
+    { url = "https://pypi.nvidia.cn/opencv-python-headless-noffmpeg/opencv_python_headless_noffmpeg-4.14.0.94rc1-cp312-cp312-manylinux_2_35_x86_64.whl", hash = "sha256:758e5c9fbee25005c9d3fc163d9c66443af7a1776789a75683a630d1ed974393" },
+    { url = "https://pypi.nvidia.cn/opencv-python-headless-noffmpeg/opencv_python_headless_noffmpeg-4.14.0.94rc1-cp312-cp312-win_amd64.whl", hash = "sha256:631eda3fc2ebc98b33ed35698f57eea65cd3983171f21a9fc1f83e00ca86e96e" },
 ]
 
 [[package]]
@@ -4891,7 +4888,7 @@ wheels = [
 [[package]]
 name = "rsl-rl-lib"
 version = "5.5.1"
-source = { editable = "rsl_rl" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "gitpython" },
     { name = "numpy" },
@@ -4901,20 +4898,10 @@ dependencies = [
     { name = "tensordict" },
     { name = "torch" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "gitpython" },
-    { name = "neptune", marker = "extra == 'neptune'" },
-    { name = "numpy", specifier = ">=1.16.4" },
-    { name = "onnx" },
-    { name = "onnxscript", specifier = ">=0.5.4" },
-    { name = "tensorboard" },
-    { name = "tensordict", specifier = ">=0.7.0" },
-    { name = "torch", specifier = ">=2.6.0" },
-    { name = "wandb", marker = "extra == 'wandb'" },
+sdist = { url = "https://files.pythonhosted.org/packages/97/0e/142a31e8124255ec9276516c49c6fbe1497f2146ea384a92b81d23e3c525/rsl_rl_lib-5.5.1.tar.gz", hash = "sha256:50129065b35c69735ea197343321145a400af8c1b5fe9a28116fdaf1890fab43", size = 68077, upload-time = "2026-09-09T11:28:51.656Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f7/d3/0d4d446c61cb61377802c9e4366cfab8a6c378b9dbcaaad376dcc152c03c/rsl_rl_lib-5.5.1-py3-none-any.whl", hash = "sha256:bdb6382e21c62ddc2b47a37f39318486d0dfde234c7d446bfd42be482ecbd6ea", size = 100035, upload-time = "2026-09-09T11:28:50.331Z" },
 ]
-provides-extras = ["wandb", "neptune"]
 
 [[package]]
 name = "rtree"
@@ -5393,8 +5380,7 @@ name = "supermimic"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "isaaclab-dev", extra = ["rsl-rl", "viser"] },
-    { name = "rsl-rl-lib" },
+    { name = "isaaclab-dev", extra = ["viser"] },
 ]
 
 [package.optional-dependencies]
@@ -5433,9 +5419,6 @@ rl-games = [
 ]
 rlinf = [
     { name = "isaaclab-dev", extra = ["rlinf"] },
-]
-rsl-rl = [
-    { name = "isaaclab-dev", extra = ["rsl-rl"] },
 ]
 sb3 = [
     { name = "isaaclab-dev", extra = ["sb3"] },
@@ -5487,8 +5470,6 @@ requires-dist = [
     { name = "isaaclab-dev", extras = ["rerun"], marker = "extra == 'rerun'", editable = "../reference/IsaacLab" },
     { name = "isaaclab-dev", extras = ["rl-games"], marker = "extra == 'rl-games'", editable = "../reference/IsaacLab" },
     { name = "isaaclab-dev", extras = ["rlinf"], marker = "extra == 'rlinf'", editable = "../reference/IsaacLab" },
-    { name = "isaaclab-dev", extras = ["rsl-rl"], marker = "extra == 'rsl-rl'", editable = "../reference/IsaacLab" },
-    { name = "isaaclab-dev", extras = ["rsl-rl", "viser"], editable = "../reference/IsaacLab" },
     { name = "isaaclab-dev", extras = ["sb3"], marker = "extra == 'sb3'", editable = "../reference/IsaacLab" },
     { name = "isaaclab-dev", extras = ["skrl"], marker = "extra == 'skrl'", editable = "../reference/IsaacLab" },
     { name = "isaaclab-dev", extras = ["teleop"], marker = "extra == 'teleop'", editable = "../reference/IsaacLab" },
@@ -5496,11 +5477,11 @@ requires-dist = [
     { name = "isaaclab-dev", extras = ["tetrahedralization"], marker = "extra == 'tetrahedralization'", editable = "../reference/IsaacLab" },
     { name = "isaaclab-dev", extras = ["torchrl"], marker = "extra == 'torchrl'", editable = "../reference/IsaacLab" },
     { name = "isaaclab-dev", extras = ["video"], marker = "extra == 'video'", editable = "../reference/IsaacLab" },
+    { name = "isaaclab-dev", extras = ["viser"], editable = "../reference/IsaacLab" },
     { name = "isaaclab-dev", extras = ["viser"], marker = "extra == 'viser'", editable = "../reference/IsaacLab" },
     { name = "isaaclab-dev", extras = ["wandb"], marker = "extra == 'wandb'", editable = "../reference/IsaacLab" },
-    { name = "rsl-rl-lib", editable = "rsl_rl" },
 ]
-provides-extras = ["all", "dev", "importers", "isaacsim", "leapp", "mimic", "ov", "ovphysx", "ovrtx", "rerun", "rl-games", "rlinf", "rsl-rl", "sb3", "skrl", "teleop", "test", "tetrahedralization", "torchrl", "video", "viser", "wandb"]
+provides-extras = ["all", "dev", "importers", "isaacsim", "leapp", "mimic", "ov", "ovphysx", "ovrtx", "rerun", "rl-games", "rlinf", "sb3", "skrl", "teleop", "test", "tetrahedralization", "torchrl", "video", "viser", "wandb"]
 
 [package.metadata.requires-dev]
 dev = [
@@ -5867,9 +5848,9 @@ name = "usd-exchange"
 version = "3.0.0"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/usd-exchange/usd_exchange-3.0.0-cp312-cp312-manylinux_2_35_aarch64.whl", hash = "sha256:59a3b8ef4bc545c76059f7efc5fec94023e0818c5a714fae40f8e0411de79db5" },
-    { url = "https://pypi.nvidia.com/usd-exchange/usd_exchange-3.0.0-cp312-cp312-manylinux_2_35_x86_64.whl", hash = "sha256:3d5a3ca9f6153abaf2bb4f8fda6c4026e174b6b050eb904a6e4a5bdf89a52926" },
-    { url = "https://pypi.nvidia.com/usd-exchange/usd_exchange-3.0.0-cp312-cp312-win_amd64.whl", hash = "sha256:374499c3d06bd10f4cda2036239935222527f17e1f3ee059fc093aeb9058439b" },
+    { url = "https://pypi.nvidia.cn/usd-exchange/usd_exchange-3.0.0-cp312-cp312-manylinux_2_35_aarch64.whl", hash = "sha256:59a3b8ef4bc545c76059f7efc5fec94023e0818c5a714fae40f8e0411de79db5" },
+    { url = "https://pypi.nvidia.cn/usd-exchange/usd_exchange-3.0.0-cp312-cp312-manylinux_2_35_x86_64.whl", hash = "sha256:3d5a3ca9f6153abaf2bb4f8fda6c4026e174b6b050eb904a6e4a5bdf89a52926" },
+    { url = "https://pypi.nvidia.cn/usd-exchange/usd_exchange-3.0.0-cp312-cp312-win_amd64.whl", hash = "sha256:374499c3d06bd10f4cda2036239935222527f17e1f3ee059fc093aeb9058439b" },
 ]
 
 [[package]]
@@ -5881,9 +5862,9 @@ dependencies = [
     { name = "usd-validation-nvidia" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/usd-optimize/usd_optimize-1.3.1-cp312-cp312-manylinux_2_35_aarch64.whl", hash = "sha256:96d9e5d115675d753eb1b2098ebf670ac4bf2a974e9bf9c7e740b414f8b48395" },
-    { url = "https://pypi.nvidia.com/usd-optimize/usd_optimize-1.3.1-cp312-cp312-manylinux_2_35_x86_64.whl", hash = "sha256:ceffa94c8759fd255e239874d882e8ca7396a12696a09af584da3db2b3275b10" },
-    { url = "https://pypi.nvidia.com/usd-optimize/usd_optimize-1.3.1-cp312-cp312-win_amd64.whl", hash = "sha256:0051d9db4b6e1215a18fdb49d1d02ffddd6fd70ff09280169f52f854bcad45ce" },
+    { url = "https://pypi.nvidia.cn/usd-optimize/usd_optimize-1.3.1-cp312-cp312-manylinux_2_35_aarch64.whl", hash = "sha256:96d9e5d115675d753eb1b2098ebf670ac4bf2a974e9bf9c7e740b414f8b48395" },
+    { url = "https://pypi.nvidia.cn/usd-optimize/usd_optimize-1.3.1-cp312-cp312-manylinux_2_35_x86_64.whl", hash = "sha256:ceffa94c8759fd255e239874d882e8ca7396a12696a09af584da3db2b3275b10" },
+    { url = "https://pypi.nvidia.cn/usd-optimize/usd_optimize-1.3.1-cp312-cp312-win_amd64.whl", hash = "sha256:0051d9db4b6e1215a18fdb49d1d02ffddd6fd70ff09280169f52f854bcad45ce" },
 ]
 
 [[package]]
@@ -5891,7 +5872,7 @@ name = "usd-validation-nvidia"
 version = "1.22.0"
 source = { registry = "https://pypi.nvidia.com/" }
 wheels = [
-    { url = "https://pypi.nvidia.com/usd-validation-nvidia/usd_validation_nvidia-1.22.0-py3-none-any.whl", hash = "sha256:5bf8756a1642c627561859f46ba04b898f79ff0b09a494aa468d027821a2b5c4" },
+    { url = "https://pypi.nvidia.cn/usd-validation-nvidia/usd_validation_nvidia-1.22.0-py3-none-any.whl", hash = "sha256:5bf8756a1642c627561859f46ba04b898f79ff0b09a494aa468d027821a2b5c4" },
 ]
 
 [[package]]
@@ -5990,9 +5971,9 @@ dependencies = [
     { name = "numpy" },
 ]
 wheels = [
-    { url = "https://pypi.nvidia.com/warp-lang/warp_lang-1.17.0-py3-none-manylinux_2_28_x86_64.whl", hash = "sha256:47cd93636828dd16e55eeb4e77a0e3547b5fb0f383000a3d228629df68f28fd8" },
-    { url = "https://pypi.nvidia.com/warp-lang/warp_lang-1.17.0-py3-none-manylinux_2_34_aarch64.whl", hash = "sha256:5051271048da956a8b94e2db9771ce60ce9591a3ac5bb49037f3d6812d1eea00" },
-    { url = "https://pypi.nvidia.com/warp-lang/warp_lang-1.17.0-py3-none-win_amd64.whl", hash = "sha256:ca35c82242a7553046f09023bbe56750b5c3d9af72625bd1a905a56d3189771d" },
+    { url = "https://pypi.nvidia.cn/warp-lang/warp_lang-1.17.0-py3-none-manylinux_2_28_x86_64.whl", hash = "sha256:47cd93636828dd16e55eeb4e77a0e3547b5fb0f383000a3d228629df68f28fd8" },
+    { url = "https://pypi.nvidia.cn/warp-lang/warp_lang-1.17.0-py3-none-manylinux_2_34_aarch64.whl", hash = "sha256:5051271048da956a8b94e2db9771ce60ce9591a3ac5bb49037f3d6812d1eea00" },
+    { url = "https://pypi.nvidia.cn/warp-lang/warp_lang-1.17.0-py3-none-win_amd64.whl", hash = "sha256:ca35c82242a7553046f09023bbe56750b5c3d9af72625bd1a905a56d3189771d" },
 ]
 
 [[package]]

@@ -10,19 +10,18 @@ import gymnasium as gym
 import supermimic.tasks  # noqa: F401
 
 
-def test_task_registrations():
-    """The project tasks must expose valid environment and agent entry points."""
-    expected = {
-        "Supermimic-Supeermimic-Cartpole": {
-            "entry_point": "isaaclab.envs:ManagerBasedRLEnv",
-            "env_cfg_entry_point": "supermimic.tasks.supeermimic.config.cartpole.env_cfg:SupeermimicEnvCfg",
-            "default_agent": "rsl_rl",
-        },
-    }
+def test_task_registration():
+    """Resolve the real task without requiring a motion dataset or trainer."""
+    from isaaclab_tasks.utils import parse_env_cfg
 
-    for task_id, expected_values in expected.items():
-        spec = gym.spec(task_id)
-        assert spec.entry_point == expected_values["entry_point"]
-        assert spec.kwargs["env_cfg_entry_point"] == expected_values["env_cfg_entry_point"]
-        if "default_agent" in expected_values:
-            assert spec.kwargs["default_agent"] == expected_values["default_agent"]
+    spec = gym.spec("SuperMimic-MotionTracking-G1")
+    cfg = parse_env_cfg(spec.id, device="cpu", num_envs=2)
+    assert callable(gym.envs.registration.load_env_creator(spec.entry_point))
+    assert cfg.scene.robot.spawn.usd_path.endswith("g1_29dof_rev_1_0.usd")
+    assert len(cfg.actions.joint_pos.joint_names) == 29
+    assert cfg.sim.dt * cfg.decimation == 0.02
+    assert cfg.sim.physics.num_substeps == 1
+    cfg.play_mode()
+    assert cfg.commands.motion.evaluation
+    assert cfg.terminations.time_out is None
+    assert not cfg.observations.policy.enable_corruption

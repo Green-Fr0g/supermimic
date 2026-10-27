@@ -8,9 +8,9 @@ from isaaclab.assets import ArticulationCfg
 from isaaclab_newton.sim.schemas import NewtonArticulationCfg
 from isaaclab_physx.sim.schemas import PhysxArticulationCfg, PhysxRigidBodyCfg
 
-from z_lab.assets import Z_LAB_ASSETS_DIR
+from supermimic.assets import SUPERMIMIC_ASSETS_DIR
 
-G1_USD_PATH = Z_LAB_ASSETS_DIR / "models" / "g1" / "g1_29dof_rev_1_0.usd"
+G1_USD_PATH = SUPERMIMIC_ASSETS_DIR / "models" / "g1" / "g1_29dof_rev_1_0.usd"
 
 G1_CFG = ArticulationCfg(
     spawn=sim_utils.UsdFileCfg(

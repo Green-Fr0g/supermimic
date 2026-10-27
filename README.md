@@ -1,12 +1,14 @@
 # supermimic
 
-This project reproduces SuperMimic with Isaac Lab 3.0 and Unitree G1. The local
-training library lives in [rsl_rl/](rsl_rl/README.md) and is installed as an editable dependency.
+This project reproduces SuperMimic with Isaac Lab 3.0 and Unitree G1. The standalone
+model-based learner lives in `src/supermimic_rl/` and does not depend on RSL-RL.
 
 An installable downstream Isaac Lab task package with a standard uv `src` layout.
 
-The registered tasks are:
-- `Supermimic-Supeermimic-Cartpole`
+The registered task is `SuperMimic-MotionTracking-G1`.
+See [task configuration and interfaces](docs/motion_tracking_task.md) and the
+[reproduction plan](docs/motion_tracking_reproduction_plan.md). See the
+[algorithm guide](docs/motion_tracking_algorithm.md) for world-model/actor/critic training and validation.
 
 ## Installation
 
@@ -45,35 +47,35 @@ environment.
 
 ## Run the tasks
 
-Replace the placeholders below with a task listed above and a selected RL library.
+Place the existing 50 Hz NPZ motions under repository-root `assets/motions/`.
+Runtime loads NPZ only; CSV/YAML conversion remains an offline step.
 
 ```bash
 # List this project's environments and their available presets
 uv run isaaclab list_envs --show_presets
 
-# Exercise an environment without a trained policy
-uv run isaaclab zero_agent --task <TASK_NAME> --num_envs 16
-uv run isaaclab random_agent --task <TASK_NAME> --num_envs 16
-
-# Train and play
-uv run isaaclab train --rl_library <RL_LIBRARY> --task <TASK_NAME>
-uv run isaaclab play --rl_library <RL_LIBRARY> --task <TASK_NAME> --checkpoint latest
-
-# Distributed training
-uv run isaaclab train_multigpu --rl_library <RL_LIBRARY> --task <TASK_NAME> --num_gpus 2
-
-# Benchmark startup, runtime, training, or play
-uv run isaaclab benchmark runtime --task <TASK_NAME> --num_envs 16 --num_steps 1000
-uv run isaaclab benchmark training --rl_library <RL_LIBRARY> --task <TASK_NAME> --max_iterations 10
+# Standard environment-only CLI, with an optional directory override
+uv run isaaclab zero_agent --task SuperMimic-MotionTracking-G1 --num_envs 2 commands.motion.motion_dir=/path/to/npz
 ```
 
-Use `physics=<PRESET>` to select one of the presets shown by `isaaclab list_envs`.
+The tracking task supports the `newton_mjwarp` preset. SuperMimic uses its independent runner, with no PPO prerequisite:
+
+```bash
+./supermimic.sh -t --profile smoke --headless
+./supermimic.sh -t --profile paper --headless
+./supermimic.sh -p --checkpoint /path/to/checkpoint.pt --headless
+```
+
+Pass `--motion_dir /path/to/npz` to override the dataset directory. Logs and checkpoints go to `logs/supermimic/`.
+The smoke profile preserves the paper networks, k=8 and H=32, using 16 environments and batches of 8.
 
 ## Project structure
 
 Task families live in `src/supermimic/tasks`. Within a manager-based family, task-wide MDP terms live in `mdp`, while
-robot-specific scenes, registrations, and agent configurations live in `config/cartpole`. Add another robot by
-creating a sibling of `config/cartpole`; add another task by creating a sibling task-family directory.
+robot-specific assets, parameters, and registrations live in `config/g1`. Add another robot by
+creating a sibling of `config/g1`; add another task by creating a sibling task-family directory.
+`super_motion_tracking/tracking_env_cfg.py` provides shared task composition;
+`tracking_env.py` handles reference timing and pre-reset transition boundaries.
 
 ## Project assets
 
@@ -94,7 +96,8 @@ expect a string.
 Run the registration test and code-quality checks through the project environment:
 
 ```bash
-uv run pytest
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 uv run pytest
+SUPERMIMIC_TEST_MOTION_DIR=/path/to/npz PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 uv run pytest tests/test_tracking_env.py
 uv run ruff check src scripts tests
 uv run ruff format --check src scripts tests
 ```
@@ -102,6 +105,8 @@ uv run ruff format --check src scripts tests
 The test helpers under `source/isaaclab_tasks/test` in the Isaac Lab repository are not part of the installed
 `isaaclab_tasks` package. Keep test fixtures in this project and use public Isaac Lab APIs. If you copy
 `env_test_utils.py`, it becomes vendored code whose upstream changes you must track.
+The plugin-autoload setting prevents locally installed ROS pytest plugins from interfering with this Python 3.12
+environment. Simulator integration tests skip explicitly unless a motion directory is supplied.
 
 To configure VS Code or Cursor, run the `setup_python_env` task or invoke its command directly:
 

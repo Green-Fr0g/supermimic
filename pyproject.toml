@@ -18,8 +18,7 @@ authors = [
 ]
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "isaaclab-dev[rsl-rl,viser]",
-    "rsl-rl-lib",
+    "isaaclab-dev[viser]",
 ]
 
 [project.entry-points."isaaclab.tasks"]
@@ -38,7 +37,6 @@ ovrtx = ["isaaclab-dev[ovrtx]"]
 rerun = ["isaaclab-dev[rerun]"]
 rl-games = ["isaaclab-dev[rl-games]"]
 rlinf = ["isaaclab-dev[rlinf]"]
-rsl-rl = ["isaaclab-dev[rsl-rl]"]
 sb3 = ["isaaclab-dev[sb3]"]
 skrl = ["isaaclab-dev[skrl]"]
 teleop = ["isaaclab-dev[teleop]"]
@@ -75,7 +73,6 @@ override-dependencies = [
 ]
 
 [tool.uv.sources]
-"rsl-rl-lib" = { path = "rsl_rl", editable = true }
 "isaaclab" = { path = "../reference/IsaacLab/source/isaaclab", editable = true }
 "isaaclab-assets" = { path = "../reference/IsaacLab/source/isaaclab_assets", editable = true }
 "isaaclab-contrib" = { path = "../reference/IsaacLab/source/isaaclab_contrib", editable = true }
@@ -100,7 +97,7 @@ override-dependencies = [
 "torchvision" = { index = "pytorch-cu130" }
 
 [tool.uv.build-backend]
-module-name = "supermimic"
+module-name = ["supermimic", "supermimic_rl"]
 
 [tool.ruff]
 line-length = 120
